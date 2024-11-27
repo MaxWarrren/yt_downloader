@@ -1,7 +1,7 @@
 from pytubefix import YouTube
-from pydub import AudioSegment
 import os
 
+#update these to your own directory
 audio_path = os.path.join(os.getcwd(), "converted/audio")
 video_path = os.path.join(os.getcwd(), "converted/videos")
 
@@ -24,4 +24,6 @@ def download_yt(url, exportType):
     except Exception as e:
         print(f"An error occurred: {e}")
 
-download_yt("https://www.youtube.com/watch?v=q9--XI4NhD8", "mp3")
+#examples
+#download_yt("https://www.youtube.com/watch?v=q9--XI4NhD8", "mp3")
+#download_yt("https://www.youtube.com/watch?v=q9--XI4NhD8", "mp4")
